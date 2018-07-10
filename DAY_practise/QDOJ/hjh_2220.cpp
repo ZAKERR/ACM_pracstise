@@ -25,12 +25,12 @@ LL Mdfs(int push,int pop){
 
 
 
-void dfsnum(int push ,int pop){
+void dfs(int push ,int pop){
      if(push > n) return ;
      if(pop > push) return ;
      if(pop == n && push == n) { ans++; return ;}
-     dfsnum(push+1,pop);
-     dfsnum(push,pop+1);
+     dfs(push+1,pop);
+     dfs(push,pop+1);
 }
 
 
@@ -39,7 +39,7 @@ int main(){
     cin >> n;
     /*
     cout << "ฑฌหั :" << endl;
-    dfsnum(0,0);
+    dfs(0,0);
     cout << ans << endl;
     */
 

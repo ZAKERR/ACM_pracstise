@@ -1,0 +1,5 @@
+思路：爆搜即可,对于每种操作，要麽选择push,要麽pop
+      即dfs(push+1,pop) 和 dfs(push,pop+1)
+	  搜索结束状态 pop == n && push == n
+	  当出栈大于入栈次数，即无情况,停止搜索
+	  

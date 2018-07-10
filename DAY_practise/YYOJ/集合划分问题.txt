@@ -1,0 +1,79 @@
+﻿题目链接: http://ybt.ssoier.cn:8088/problem_show.php?pid=1315
+
+题目描述：
+
+把S集合中的n个元素a1，a2，……，an放入k个(0＜k ≤ n＜30)无标号的盒子中，使得没有一个盒子为空。
+请你确定n个元素a1，a2，……，an 放入k个无标号盒子中去的划分数S(n,k)。
+
+
+Tip思路: 
+    问题转换就是有n个物品(obj)每个不一样,放入k个盒子里(box)，问多少种情况
+	对于第i个物品obj_i放入这堆盒子的情况只有两种:
+	1.obj_i单独(不和其他元素组合)放入一个盒子  
+	2.obj_i不单独(和其他元素组合)放入一个盒子
+	
+	对于第二种情况:前i种物品放了k个盒子，那么obj_i可以选择k种情况组合
+	
+	
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+#define LL long long
+
+const int Mobj = 1e2+5;
+const int Mbox = 10+5;
+LL ans[Mobj][Mbox];
+
+using namespace std;
+
+LL Solution1(LL obj ,LL box){   //递归算法
+
+     if( obj < box || obj == 0) return 0;
+     if( box == obj )return 1;
+
+     return Solution1(obj-1,box-1)+box*Solution1(obj-1,box);
+}
+
+LL Solution2(LL obj ,LL box){  //记忆化递归算法
+
+      if(ans[obj][box] != -1) return ans[obj][box];
+
+      if(obj < box || obj == 0 ) return ans[obj][box] = 0 ;
+      if(box == obj || box == 1) return ans[obj][box] = 1;
+
+      return (ans[obj][box] = Solution2(obj-1,box-1)+box*Solution2(obj-1,box) );
+}
+
+
+LL Solution3(LL obj,LL box){
+
+     if(ans[obj][box] != -1) return ans[obj][box];
+
+     if(obj < box || obj == 0 )  ans[obj][box] = 0 ;
+     else if(box == 1 || box == obj) ans[obj][box] = 1;
+     else ans[obj][box] = Solution3(obj-1,box-1)+box*Solution3(obj-1,box);
+
+     return ans[obj][box];
+}
+
+
+int main(){
+
+   LL obj,box;
+   cin >> obj >> box;
+   /*
+   cout << Solution1(obj,box);
+   */
+
+   /*
+   memset(ans,-1,sizeof(ans));
+   cout << Solution2(obj,box) << endl;
+
+   */
+
+    memset(ans,-1,sizeof(ans));
+   cout << Solution3(obj,box) << endl;
+
+
+}
+	

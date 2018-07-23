@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1531902074 source:c:\users\admin\documents\github\acm_pracstise\cf\hjh_494div3\d. coins and queries\main.cpp
+	<cstdio>
+	<iostream>
+	<string>
+	<iostream>
+	<map>
+

@@ -17,9 +17,5 @@ int main()
 	if(sum-a<=a)
 		cout<<-1<<endl;
 	else
-	{
-		cout<<1<<endl;
-		cout<<q;
-	}
-	
+		cout<<1<<endl<<q;
 }

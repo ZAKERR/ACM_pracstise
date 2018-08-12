@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1533700523 source:c:\users\admin\documents\github\acm_pracstise\day_practise\uva\master-mind hints\main.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+

@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1533697383 source:c:\users\admin\documents\github\acm_pracstise\day_practise\uva\palindromes\main.cpp
+	<iostream>
+	<string>
+	<algorithm>
+	<iostream>
+	<cstdio>
+

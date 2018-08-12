@@ -1,0 +1,1 @@
+C:/cygwin64/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/HJH_493DIV1.dir/Roman_Digits/main.cpp.o  -o HJH_493DIV1.exe -Wl,--out-implib,libHJH_493DIV1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

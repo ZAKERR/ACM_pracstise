@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1532680956 source:c:\users\admin\documents\github\acm_pracstise\cf\hjh_493div1\roman digits\main.cpp
+	<iostream>
+	<cstdio>
+	<set>
+

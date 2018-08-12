@@ -1,0 +1,3 @@
+/cygdrive/c/Users/Admin/Documents/GitHub/ACM_pracstise/Day1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/c/Users/Admin/Documents/GitHub/ACM_pracstise/Day1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/cygdrive/c/Users/Admin/Documents/GitHub/ACM_pracstise/Day1/cmake-build-debug/CMakeFiles/Day1.dir

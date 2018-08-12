@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1533226128 source:c:\users\admin\documents\github\acm_pracstise\algorithm\data struct\single_queue\flow_windows\main.cpp
+	<iostream>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+

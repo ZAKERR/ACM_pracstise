@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/Admin/Documents/GitHub/ACM_pracstise/Day1/L. New Gam.cpp
+iostream
+-
+cstdio
+-
+queue
+-
+vector
+-
+cmath
+-
+cstring
+-
+

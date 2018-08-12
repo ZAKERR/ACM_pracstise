@@ -1,0 +1,30 @@
+C:\Users\Admin\.CLion2018.1\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/cygwin64/bin/make.exe -DCMAKE_C_COMPILER=C:/cygwin64/bin/gcc.exe -DCMAKE_CXX_COMPILER=C:/cygwin64/bin/c++.exe -G "CodeBlocks - Unix Makefiles" "/cygdrive/c/Users/Admin/Documents/GitHub/ACM_pracstise/algorithm/data struct/single_queue"
+-- The C compiler identification is GNU 7.3.0
+-- The CXX compiler identification is GNU 7.3.0
+-- Check for working C compiler: C:/cygwin64/bin/gcc.exe
+-- Check for working C compiler: C:/cygwin64/bin/gcc.exe -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: C:/cygwin64/bin/c++.exe
+-- Check for working CXX compiler: C:/cygwin64/bin/c++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+CMake Error at CMakeLists.txt:6 (add_executable):
+  Cannot find source file:
+
+    鍗曡皟闃熷垪.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .m .M .mm .h .hh .h++ .hm .hpp
+  .hxx .in .txx
+
+
+CMake Error: CMake can not determine linker language for target: single_queue
+CMake Error: Cannot determine link language for target "single_queue".
+-- Generating done
+-- Build files have been written to: /cygdrive/c/Users/Admin/Documents/GitHub/ACM_pracstise/algorithm/data struct/single_queue/cmake-build-debug
+Unable to determine product file path for target single_queue. Running and debugging will be unavailable.
